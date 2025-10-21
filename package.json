@@ -1,5 +1,12 @@
 {
   "devDependencies": {
-    "cypress": "^15.3.0"
+    "cross-env": "^10.1.0",
+    "cypress": "^15.3.0",
+    "dotenv": "^17.2.3",
+    "mocha-junit-reporters": "^1.23.6"
+  },
+  "scripts": {
+    "cy:stage": "cross-env NODE_ENV=stage cypress open",
+    "cy:dev": "cross-env NODE_ENV=development cypress open"
   }
 }
